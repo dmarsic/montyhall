@@ -51,7 +51,7 @@ function montyHall(doors, choice, switch)
     goats = filter(x -> x != car, doors)
     opens = rand(filter(x -> x != choice, goats))
     @info "Candidate chose door $choice, Monty Hall opens door $opens"
-    switchDoor = rand(filter(x -> x != opens, doors))
+    switchDoor = rand(filter(x -> x != opens && x != choice, doors))
     if switch
         choice = switchDoor
         @info "Candidate switches! New choice is door $choice."
