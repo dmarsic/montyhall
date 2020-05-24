@@ -7,7 +7,7 @@ The candidate has a choice of three doors, one with a car and two with goats. Th
 This is a probability problem that demonstrates that switching the door has a better outcome:
 
 * If the candidate doesn't switch the door, their success rate is 1/3.
-* If the candidate switches, their success rate is 1/2.
+* If the candidate switches, their success rate is 2/3.
 
 # Run
 
@@ -25,12 +25,12 @@ Candidate switches doors: false. Success rate: 33.06
 
 ## Candidate switches the door
 
-Runs 10,000 iterations with switching doors. The success rate is around 1/2 (50%).
+Runs 10,000 iterations with switching doors. The success rate is around 2/3 (67%).
 
 ```
 julia montyhall.jl --switch
 Running Monty hall with doors: [1, 2, 3] for 10000 times.
-Candidate switches doors: true. Success rate: 49.73
+Candidate switches doors: true. Success rate: 66.80
 ```
 
 ## Command-line options
@@ -47,9 +47,10 @@ Candidate switches doors: true. Success rate: 49.73
 
 # Licence
 
-GNU v3. See LICENSE.
+GNU GPL v3. See LICENSE.
 
 # Author
 
 Domagoj Marsic, 2020
+
 Contact: dmars+github@protonmail.com
